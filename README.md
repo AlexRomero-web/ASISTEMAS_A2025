@@ -1,72 +1,60 @@
-EXPLICACIÓN PARA QUE EL PROFESOR PUEDA VER SU CÓDIGO
 
-🔗 Enlace base del repositorio
-👉 https://github.com/fabiansmsecu/ASISTEMAS_A2025
+# Evaluación de Seguridad – Streamlit App
 
-🔹 PASO 2 – ¿Dónde hacer el Fork?
-Ingresa al enlace anterior.
+Esta aplicación web permite evaluar dominios de seguridad mediante un cuestionario dinámico cargado desde un archivo Excel.
 
-En la parte superior derecha de la pantalla (cerca de tu foto de perfil), verás un botón que dice “Fork” (o "Bifurcar" si tienes GitHub en español).
+## **Características principales**
+- Carga un archivo Excel con preguntas y dominios.
+- Responde cada pregunta mediante sliders (1 a 5).
+- Calcula automáticamente el promedio por dominio.
+- Genera un gráfico **Radar Chart** interactivo con los promedios.
+- Muestra indicadores tipo semáforo (Riesgo Alto, Medio, Bueno).
+- Proporciona interpretación textual de los resultados.
 
-Haz clic allí.
+---
 
-Se abrirá una ventana preguntando dónde quieres hacer el fork → selecciona tu cuenta.
+## **¿Cómo usar la aplicación?**
+1. Accede a la aplicación desde el siguiente enlace:  
+   **[Abrir la app en Streamlit](https://sistemascuestionario-grupoe-2025.streamlit.app)**
+2. Sube el archivo Excel con las preguntas del cuestionario (por ejemplo, `AUSBAD Tarea 9 Cuestionario Grupo E.xlsx`).
+3. Responde todas las preguntas moviendo los sliders.
+4. Haz clic en **"Generar Informe"** para ver:
+   - Tabla con promedios.
+   - Radar Chart interactivo.
+   - Indicadores de riesgo (Rojo, Amarillo, Verde).
 
-GitHub creará una copia del repositorio en tu propia cuenta. El enlace cambiará a algo como:
+---
 
-arduino
-Copiar
-Editar
-https://github.com/tuUsuario/ASISTEMAS_A2025
-🔹 PASO 3 – ¿Dónde encontrar el botón "Code" para clonar?
-Ve a tu fork, es decir, el repositorio que ahora está en tu cuenta.
+## **Ejecución local (opcional)**
+Si deseas ejecutar el proyecto en tu computadora:
 
-Verás un botón verde que dice "Code" justo encima de los archivos.
+### **1. Clonar el repositorio**
+```bash
+git clone https://github.com/AdrianValencia04/ASISTEMAS_2025_VALENCIA.git
+cd ASISTEMAS_2025_VALENCIA
+```
 
-Haz clic en "Code" → copia el enlace que aparece en la pestaña HTTPS (es algo como https://github.com/tuUsuario/ASISTEMAS_A2025.git).
+### **2. Instalar dependencias**
+```bash
+pip install -r requirements.txt
+```
 
-Abre Git Bash o Terminal y usa ese enlace como en las instrucciones:
+### **3. Ejecutar la aplicación**
+```bash
+streamlit run app.py
+```
 
-bash
-Copiar
-Editar
-git clone https://github.com/tuUsuario/ASISTEMAS_A2025.git
-cd ASISTEMAS_A2025
-🔹 PASO 4 – Crear una rama
-Una vez estés dentro de la carpeta clonada en tu PC, en la terminal:
+---
 
-bash
-Copiar
-Editar
-git checkout -b actividad1-TuApellidoTuNombre
-🔹 PASO 6 – ¿Dónde veo si el Push funcionó?
-Después de hacer:
+## **Archivos del proyecto**
+- **app.py** – Código principal de la aplicación.
+- **requirements.txt** – Librerías necesarias para ejecutar la app.
+- **AUSBAD Tarea 9 Cuestionario Grupo E.xlsx** – Archivo Excel con las preguntas.
+- **README.md** – Este archivo de documentación.
 
-bash
-Copiar
-Editar
-git push origin actividad1-TuApellidoTuNombre
-Ve otra vez a tu repositorio en GitHub.
+---
 
-Verás una barra amarilla que dice algo como:
+## **Captura de Pantalla**
+![Captura de la App](https://i.imgur.com/ExampleImage.png)
 
-vbnet
-Copiar
-Editar
-Compare & pull request
-Haz clic allí.
-
-🔹 PASO 7 – ¿Dónde se crea el Pull Request (PR)?
-En esa pantalla de “Compare & pull request”, asegúrate de lo siguiente:
-
-Base repository: fabiansmsecu/ASISTEMAS_A2025
-
-Head repository: tuUsuario/ASISTEMAS_A2025
-
-Escribe como título:
-Actividad 1 – Apellido Nombre
-
-Haz clic en el botón verde que dice “Create pull request”.
-
-✅ ¡Con eso tu profesor verá tu entrega automáticamente en el siguiente enlace!
-📌 https://github.com/fabiansmsecu/ASISTEMAS_A2025/pulls
+---
